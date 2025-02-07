@@ -68,6 +68,7 @@ GUIA-DE-MOTEIS-TESTE/
 │       └── registration-form.cy.js # Testes automatizados do formulário
 ├── support/     
 │       └── index.html        # Importação do arquivo de comandos personalizados e Globais
+├── nome_modules              # Dependências do node.js
 ├── cypress.config.js         # Configuração do Cypress
 ├── package-lock.json         # Configuração do Node.js e as versões exatas de cada pacote
 ├── package.json              # Configuração do Node.js
