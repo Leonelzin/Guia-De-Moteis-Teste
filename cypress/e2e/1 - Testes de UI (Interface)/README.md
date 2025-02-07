@@ -55,13 +55,16 @@ Antes de iniciar, certifique-se de ter o seguinte configurado no seu ambiente:
 Abaixo está a estrutura esperada do projeto:
 
 ```
-projeto/
-├── public/
-│   └── index.html            # Formulário de cadastro
+GUIA-DE-MOTEIS-TESTE/
 ├── cypress/
 │   └── e2e/
-│       └── formulario_cadastro.cy.js # Testes automatizados
+│     └── 1 - Testes de UI(Interface)/
+│        └── public/
+│              └── index.html            # Formulário de cadastro
+│       └── README.md # Para compreensão de como rodar o primeiro teste
+│       └── registration-form.cy.js # Testes automatizados
 ├── cypress.config.js         # Configuração do Cypress
+├── package-lock.json         # Configuração do Node.js
 ├── package.json              # Configuração do Node.js
 ```
 
@@ -82,7 +85,7 @@ projeto/
    npx cypress open
    ```
 
-3. **Selecione o teste**: Navegue até a pasta `cypress/e2e` e selecione o arquivo `formulario_cadastro.cy.js`.
+3. **Selecione o teste**: Navegue até a pasta `cypress/e2e/1-Testes de UI (Interface)` e selecione o arquivo `registration-form.cy.js`.
 
 4. **Execute o teste**: O Cypress abrirá um navegador e executará os cenários descritos acima.
 
