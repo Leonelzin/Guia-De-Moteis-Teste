@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "3811d4c8-2552-466d-8845-7fe4d9a1bf82",
+		"name": "Mock API - Testes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25317026"
+	},
+	"item": [
+		{
+			"name": "GET Users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Lista de códigos de status esperados\r",
+							"const expectedStatusCodes = [200, 400, 500];\r",
+							"\r",
+							"// Captura o código de status da resposta\r",
+							"const actualStatusCode = pm.response.code;\r",
+							"\r",
+							"// Verifica se o código de status atual está na lista de códigos esperados\r",
+							"if (expectedStatusCodes.includes(actualStatusCode)) {\r",
+							"    console.log(`✅ Status Code ${actualStatusCode} está dentro do esperado.`);\r",
+							"    pm.test(\"Código de status está correto\", function () {\r",
+							"        pm.expect(expectedStatusCodes).to.include(actualStatusCode);\r",
+							"    });\r",
+							"} else {\r",
+							"    console.error(`❌ Status Code ${actualStatusCode} não é esperado!`);\r",
+							"    pm.test(\"Código de status não é esperado\", function () {\r",
+							"        pm.expect(expectedStatusCodes).to.include(actualStatusCode);\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"// Informações adicionais para depuração\r",
+							"console.log(\"Resposta da API:\", pm.response.json());\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/users/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST User - Sucesso",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Lista de códigos de status esperados\r",
+							"const expectedStatusCodes = [200, 201, 400, 500];\r",
+							"\r",
+							"// Captura o código de status da resposta\r",
+							"const actualStatusCode = pm.response.code;\r",
+							"\r",
+							"// Verifica se o código de status atual está na lista de códigos esperados\r",
+							"if (expectedStatusCodes.includes(actualStatusCode)) {\r",
+							"    console.log(`✅ Status Code ${actualStatusCode} está dentro do esperado.`);\r",
+							"    pm.test(\"Código de status está correto\", function () {\r",
+							"        pm.expect(expectedStatusCodes).to.include(actualStatusCode);\r",
+							"    });\r",
+							"} else {\r",
+							"    console.error(`❌ Status Code ${actualStatusCode} não é esperado!`);\r",
+							"    pm.test(\"Código de status não é esperado\", function () {\r",
+							"        pm.expect(expectedStatusCodes).to.include(actualStatusCode);\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"// Informações adicionais para depuração\r",
+							"console.log(\"Resposta da API:\", pm.response.json());\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Leonelzin\",\n  \"email\": \"testemoteis@example.com\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/users",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST User - Erro 400",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Lista de códigos de status esperados\r",
+							"const expectedStatusCodes = [200, 201, 400, 500];\r",
+							"\r",
+							"// Captura o código de status da resposta\r",
+							"const actualStatusCode = pm.response.code;\r",
+							"\r",
+							"// Verifica se o código de status atual está na lista de códigos esperados\r",
+							"if (expectedStatusCodes.includes(actualStatusCode)) {\r",
+							"    console.log(`✅ Status Code ${actualStatusCode} está dentro do esperado.`);\r",
+							"    pm.test(\"Código de status está correto\", function () {\r",
+							"        pm.expect(expectedStatusCodes).to.include(actualStatusCode);\r",
+							"    });\r",
+							"} else {\r",
+							"    console.error(`❌ Status Code ${actualStatusCode} não é esperado!`);\r",
+							"    pm.test(\"Código de status não é esperado\", function () {\r",
+							"        pm.expect(expectedStatusCodes).to.include(actualStatusCode);\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"// Informações adicionais para depuração\r",
+							"console.log(\"Resposta da API:\", pm.response.json());\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"\",\n  \"email\": \"joão@gmail.com\"\n}\n"
+				},
+				"url": {
+					"raw": "{{base_url}}/users",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST User - Erro 500",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Lista de códigos de status esperados\r",
+							"const expectedStatusCodes = [200, 201, 400, 500];\r",
+							"\r",
+							"// Captura o código de status da resposta\r",
+							"const actualStatusCode = pm.response.code;\r",
+							"\r",
+							"// Verifica se o código de status atual está na lista de códigos esperados\r",
+							"if (expectedStatusCodes.includes(actualStatusCode)) {\r",
+							"    console.log(`✅ Status Code ${actualStatusCode} está dentro do esperado.`);\r",
+							"    pm.test(\"Código de status está correto\", function () {\r",
+							"        pm.expect(expectedStatusCodes).to.include(actualStatusCode);\r",
+							"    });\r",
+							"} else {\r",
+							"    console.error(`❌ Status Code ${actualStatusCode} não é esperado!`);\r",
+							"    pm.test(\"Código de status não é esperado\", function () {\r",
+							"        pm.expect(expectedStatusCodes).to.include(actualStatusCode);\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"// Informações adicionais para depuração\r",
+							"console.log(\"Resposta da API:\", pm.response.json());\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-simulate-error",
+						"value": "true"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Erro de Servidor\",\n  \"email\": \"erro@example.com\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/users",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}

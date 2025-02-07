@@ -43,10 +43,11 @@ Abaixo está a estrutura esperada do projeto caso os testes sejam automatizados 
 
 ```
 GUIA-DE-MOTEIS-TESTE/
-├── 2 - Testes de API (Postman)/                      # Arquivos de teste
-│       └──mock/                                      # Arquivos de configuração para APIs mock
-│           └── server.js                             # Dados de exemplo da API mock
-│       └── evidences/                                # Provas que o teste de API funciona
+├── 2 - Testes de API (Postman)/                                                      # Arquivos de teste
+│       └──mock/                                                                      # Arquivos de configuração para APIs mock
+│           └── Mock API - Testes.postman_collection.json                             # Dados de exemplo da API mock
+│           └── server.js                                                             # Dados de exemplo da API mock
+│       └── evidences/                                                                # Provas que o teste de API funciona
 │              └── evidence-test-2.mp4           
 |              └── evidence-test.png             
 |              └── evidence-test-2.png  
@@ -59,7 +60,7 @@ GUIA-DE-MOTEIS-TESTE/
 #### ⚙️ **Configuração do Projeto com Postman**
 
 1. **Importe a Collection no Postman**:
-   - Salve o arquivo JSON da collection (fornecido anteriormente) no seu computador.
+   - Salve o arquivo JSON da collection visualizado no folder /mock no seu computador.
    - No Postman, clique em **Import** e selecione o arquivo para adicionar os endpoints.
 
 2. **Configure o Ambiente no Postman**:
