@@ -62,7 +62,7 @@ GUIA-DE-MOTEIS-TESTE/
 │        └── public/
 │              └── index.html            # Formulário de cadastro
 │        └── evidences/                  # Provas que a automação funciona
-│              └── mp4            
+│              └── evidence-test-1.mp4           
 |              └── evidence-test-1.png             
 │       └── README.md # Para compreensão de como rodar o primeiro teste
 │       └── registration-form.cy.js # Testes automatizados do formulário
