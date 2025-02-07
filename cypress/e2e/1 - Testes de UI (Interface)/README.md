@@ -61,8 +61,13 @@ GUIA-DE-MOTEIS-TESTE/
 │     └── 1 - Testes de UI(Interface)/
 │        └── public/
 │              └── index.html            # Formulário de cadastro
+│        └── evidences/                  # Provas que a automação funciona
+│              └── mp4            
+|              └── evidence-test-1.png             
 │       └── README.md # Para compreensão de como rodar o primeiro teste
 │       └── registration-form.cy.js # Testes automatizados
+├── support/     
+│       └── index.html        # Importação do arquivo de comandos personalizados e Globais
 ├── cypress.config.js         # Configuração do Cypress
 ├── package-lock.json         # Configuração do Node.js
 ├── package.json              # Configuração do Node.js
@@ -74,7 +79,7 @@ GUIA-DE-MOTEIS-TESTE/
 
 1. **Inicie o servidor local** para hospedar o formulário:
    ```bash
-   cd public
+   cd cypress/e2e/1-Testes de UI(Interface)/public
    http-server -p 8080
    ```
 
