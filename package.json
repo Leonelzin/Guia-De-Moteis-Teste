@@ -1,0 +1,23 @@
+{
+  "name": "guia-de-moteis-teste",
+  "version": "1.0.0",
+  "description": "Este teste consiste em validar a qualidade de um formulário de cadastro de usuário e uma API REST, garantindo que ambos funcionam corretamente, são seguros e performáticos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leonelzin/Guia-De-Moteis-Teste.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leonelzin/Guia-De-Moteis-Teste/issues"
+  },
+  "homepage": "https://github.com/Leonelzin/Guia-De-Moteis-Teste#readme",
+  "devDependencies": {
+    "cypress": "^14.0.2"
+  }
+}
