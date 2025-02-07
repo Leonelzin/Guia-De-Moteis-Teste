@@ -1,4 +1,4 @@
-### 📋 README: Como executar o Teste 1 - Automação de UI com Cypress
+### 📋 README: Como executar o "Teste 1 - Automação de UI com Cypress"
 
 ---
 
@@ -65,11 +65,11 @@ GUIA-DE-MOTEIS-TESTE/
 │              └── mp4            
 |              └── evidence-test-1.png             
 │       └── README.md # Para compreensão de como rodar o primeiro teste
-│       └── registration-form.cy.js # Testes automatizados
+│       └── registration-form.cy.js # Testes automatizados do formulário
 ├── support/     
 │       └── index.html        # Importação do arquivo de comandos personalizados e Globais
 ├── cypress.config.js         # Configuração do Cypress
-├── package-lock.json         # Configuração do Node.js
+├── package-lock.json         # Configuração do Node.js e as versões exatas de cada pacote
 ├── package.json              # Configuração do Node.js
 ```
 
