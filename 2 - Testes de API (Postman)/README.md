@@ -41,6 +41,7 @@ Antes de iniciar, certifique-se de ter o seguinte configurado no seu ambiente:
 
 Abaixo está a estrutura esperada do projeto caso os testes sejam automatizados em Node.js:
 
+```
 GUIA-DE-MOTEIS-TESTE/
 ├── 2 - Testes de API (Postman)/                      # Arquivos de teste
 │       └──mock/                                      # Arquivos de configuração para APIs mock
@@ -51,7 +52,7 @@ GUIA-DE-MOTEIS-TESTE/
 |              └── evidence-test-2.png  
 |              └── evidence-test-3.png             
 ├── README.md                                         # Documentação do teste
-
+```
 
 ---
 
