@@ -1,8 +1,8 @@
-# 📋 README: Como executar o "Teste 3 - Testes de Performance da API"
+### 📋 README: Como executar o "Teste 3 - Testes de Performance da API"
 
 ---
 
-## 📝 **Descrição do Teste**
+#### 📝 **Descrição do Teste**
 
 O objetivo deste teste é realizar uma análise de performance de uma API mock, simulando usuários simultâneos e verificando o comportamento da API sob carga. Os requisitos a serem validados são:
 
@@ -13,7 +13,7 @@ O objetivo deste teste é realizar uma análise de performance de uma API mock, 
 
 ---
 
-## 💡 **Cenários de Teste Implementados**
+#### 💡 **Cenários de Teste Implementados**
 
 1️⃣ **Testar a API com 100 usuários simultâneos**: Validar o tempo de resposta e verificar se a API responde corretamente sem falhas.  
 2️⃣ **Testar a API com 10.000 usuários simultâneos**: Avaliar a estabilidade da API sob carga maior.  
@@ -22,7 +22,7 @@ O objetivo deste teste é realizar uma análise de performance de uma API mock, 
 
 ---
 
-## 🛠 **Pré-requisitos**
+#### 🛠 **Pré-requisitos**
 
 Antes de iniciar, certifique-se de ter o seguinte configurado no seu ambiente:
 
@@ -31,7 +31,7 @@ Antes de iniciar, certifique-se de ter o seguinte configurado no seu ambiente:
 
 ---
 
-## 📂 **Estrutura de Diretórios**
+#### 📂 **Estrutura de Diretórios**
 
 Abaixo está a estrutura esperada do projeto com base nos testes realizados:
 
@@ -50,7 +50,7 @@ GUIA-DE-MOTEIS-TESTE/
 
 ---
 
-## ⚙️ **Configuração do Projeto**
+#### ⚙️ **Configuração do Projeto**
 
 1. **Iniciar o Servidor Express**:
    - Navegue até o diretório onde o arquivo `server.js` está localizado.
@@ -65,7 +65,7 @@ GUIA-DE-MOTEIS-TESTE/
 
 ---
 
-## 🚀 **Como executar o teste (JMeter)**
+#### 🚀 **Como executar o teste (JMeter)**
 
 1. **Inicie o Servidor Express**:
    - No terminal, execute o comando:
@@ -81,7 +81,7 @@ GUIA-DE-MOTEIS-TESTE/
 
 ---
 
-## 🛡 **O que será validado nos testes?**
+#### 🛡 **O que será validado nos testes?**
 
 - **Tempo de Resposta**: Verificar se a API responde rapidamente a todas as requisições simuladas.
 - **Erros de Requisição**: Identificar se há falhas de requisição (erros HTTP 500 ou outros).
@@ -89,7 +89,7 @@ GUIA-DE-MOTEIS-TESTE/
 
 ---
 
-## 🛑 **Possíveis Erros e Soluções**
+#### 🛑 **Possíveis Erros e Soluções**
 
 1. **Erro ao conectar ao Servidor**:
    - Certifique-se de que o servidor Express está rodando corretamente.
