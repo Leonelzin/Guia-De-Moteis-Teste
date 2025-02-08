@@ -38,9 +38,9 @@ Abaixo está a estrutura esperada do projeto com base nos testes realizados:
 ```
 GUIA-DE-MOTEIS-TESTE/
 ├── 3 - Testes de Performance (JMeter)/                                               # Arquivos de teste
-│       └──artefatos/                                                                 # Arquivos de configuração para APIs mock
-│           └── Teste_Perfomance.jmx                                                  # Dados de exemplo da API mock
-│       └── evidences/                                                                # Provas que o teste de API funciona
+│       └──artefatos/                                                                 
+│           └── Teste_Perfomance.jmx                                                  # Teste de Performance realizado no JMeter para download e verificação
+│       └── evidences/                                                                # Provas que o teste de Performance funciona
 │              └── evidence-test-3.mp4           
 |              └── evidence-test.png             
 |              └── evidence-test-2.png  
